@@ -23,33 +23,14 @@ name: "ping",
 code: `Pong! \`$ping\` ms` 
 
 })
-
 bot.command({
- name: "suggest",
- code: `
- $useChannel[$getServerVar[suggestchannel]]
- $title[**New Suggestion!**]
- $description[
- username: $username[$authorID]
- Suggestion: $message]
- $color[RANDOM]
- $footer[✔ like it / ❌ didnt like it]
- $thumbnail[$userAvatar[$authorID]]
- $addCmdReactions[✔]
- $addReactions[✔;❌] 
-$onlyIf[$getServerVar[suggestchannel]!=;This server has no suggest channel run **<setsuggestchannel** to set one!]
-$onlyIf[$getServerVar[suggest_system]==true;Suggest system is not enabled!]
-
- `
- });
-
-
-
-
-
-
-
-
+name: "say",
+code: `
+$message
+$wait[3s]
+$botTyping
+$deletecommand`
+})
 
 bot.command({
 name: "setprefix",
