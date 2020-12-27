@@ -36,5 +36,5 @@ $onlyPerms[admin;$customEmoji[Rufy] **You dont have** \`ADMIN\` **perms**]`
 })
  
 bot.variables({
-    prefix: "!"
+    prefix: "-"
 })
