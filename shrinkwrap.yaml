@@ -1,5 +1,5 @@
 dependencies:
-  dbd.js: 0.6.5
+  dbd.js: 1.0.1
   quick.db: 7.1.3
 packages:
   /@discordjs/collection/0.1.6:
@@ -427,7 +427,7 @@ packages:
     dev: false
     resolution:
       integrity: sha512-+fDXmFqrsZfuCr3dwSxm0pyK5RTiIBFBJiWTG6HaZQc9FhoqT4o9KQFEfGllic0S2gEpzHYMirzqJ5qSh+mOrQ==
-  /dbd.js/0.6.5:
+  /dbd.js/1.0.1:
     dependencies:
       discord.js: /discord.js/12.5.1/node-opus@0.3.3+opusscript@0.0.7
       express: 4.17.1
@@ -438,6 +438,7 @@ packages:
       node-fetch: 2.6.1
       node-opus: 0.3.3
       opusscript: 0.0.7
+      os-utils: 0.0.14
       parse-ms: 2.1.0
       sequelize: 4.0.0
       sqlite3: 5.0.0
@@ -447,7 +448,7 @@ packages:
     engines:
       node: 12.x
     resolution:
-      integrity: sha512-IowGrhJJMjQ0zcX8c+ka1vrvweHDPikWKHrPvl9ZR+uxI25wuFWa+j6GBZ8kIuTGTR+MyyHCKf5PnYtnWpYJNA==
+      integrity: sha512-bQi3rRzohzb6jNtHmcJMIu3BC3KZaF6obhpCzGV/Ea0alxU2AKPv7pVJrYDKOTmMYftwRQ1aQQH3XBtG6vTR/A==
   /debug/2.6.9:
     dependencies:
       ms: 2.0.0
@@ -1600,6 +1601,10 @@ packages:
       node: '>=0.10.0'
     resolution:
       integrity: sha1-u+Z0BseaqFxc/sdm/lc0VV36EnQ=
+  /os-utils/0.0.14:
+    dev: false
+    resolution:
+      integrity: sha1-KeURaXsZgrjGJ3Ihdf45eX72QVY=
   /osenv/0.1.5:
     dependencies:
       os-homedir: 1.0.2
@@ -2366,5 +2371,5 @@ registry: 'https://registry.npmjs.org/'
 shrinkwrapMinorVersion: 9
 shrinkwrapVersion: 3
 specifiers:
-  dbd.js: ^0.6.5
+  dbd.js: ^1.0.1
   quick.db: ^7.1.3
