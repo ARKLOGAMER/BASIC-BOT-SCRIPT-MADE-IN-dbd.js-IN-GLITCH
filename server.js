@@ -20,9 +20,9 @@ bot.command({
 
 name: "ping", 
 
-code: `Pong! \`$ping\` ms` 
+code: `Pong! \`$ping\` ms`
+  })
 
-})
 bot.command({
 name: "say",
 code: `
@@ -30,6 +30,9 @@ $message
 $botTyping
 $deletecommand`
 })
+
+
+
 bot.command({
 name: "setprefix",
 aliases: ['changeprefix', 'prefix'],
