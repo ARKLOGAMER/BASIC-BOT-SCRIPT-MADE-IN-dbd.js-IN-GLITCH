@@ -47,3 +47,15 @@ $onlyPerms[admin;$customEmoji[Rufy] **You dont have** \`ADMIN\` **perms**]`
 bot.variables({
     prefix: "-"
 })
+
+bot.command({
+
+ name: "play",
+
+ code: 
+$onlyIf[$message!=;Type a valid song name!]
+$onlyIf[$voiceID!=;You're not in a voice channel]
+
+})
+
+({
