@@ -27,11 +27,9 @@ bot.command({
 name: "say",
 code: `
 $message
-$wait[3s]
 $botTyping
 $deletecommand`
 })
-
 bot.command({
 name: "setprefix",
 aliases: ['changeprefix', 'prefix'],
