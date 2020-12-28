@@ -93,6 +93,3 @@ $description[$queue[1;10]]
 
 $color[$random[1;9999]]`
 });
-erVar[exp;$authorID];]`
-
-});
