@@ -134,3 +134,40 @@ $image[https://flamingtext.com/net-fu/proxy_form.cgi?script=water-logo&text=$mes
 
 $color[RANDOM]`
 })
+
+
+Vars 
+exp: "0",
+req: "requirements for level 2",
+level: "1",
+score: "0"
+
+exp gain code
+bot.command({
+ name: "$alwaysExecute",
+
+ code: `
+$setGlobalUserVar[score;$sum[$getGlobalUserVar[score;$authorID];$random[0;$multi[$getGlobalUserVar[level;$authorID];20]]];$authorID]
+
+
+$setGlobalUserVar[exp;$sum[$getGlobalUserVar[exp;$authorID];$random[0;$multi[$getGlobalUserVar[level;$authorID];20]]];$authorID]`
+});
+
+
+Auto level up
+bot.command({
+ name: "$alwaysExecute",
+
+ code:  `
+
+GG! <@$authorID>, you level up to $getVar[level;$authorID].
+
+$setGlobalUserVar[req;$sum[$getGlobalUserVar[req;$authorID];1500];$authorID]
+
+$setGlobalUserVar[exp;0;$authorID]
+
+$setGlobalUserVar[level;$sum[$getGlobalUserVar[level;$authorID];1];$authorID]
+
+$onlyIf[$getGlobalUserVar[req;$authorID]<$getGlobalUserVar[exp;$authorID];]`
+
+});
