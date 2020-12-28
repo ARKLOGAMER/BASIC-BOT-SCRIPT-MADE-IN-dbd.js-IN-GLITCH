@@ -6,12 +6,12 @@ $description[$djsEval[
 const util = require('minecraft-server-util');
 const Discord = require('discord.js');
 const client = new Discord.Client();
-client.login('your_token_here');
+client.login('NzkyNzIxMDEwNzA0MjUyOTc4.X-h0-A.BJ0bEctIhdlKdPGxVtG-dsdXqVo');
 
 // IMPORTANT: You need to run "npm i minecraft-server-util@^3.0.1 discord.js@^12.3.1" (without quotes) in your terminal before executing this script
 
 const server = {
- ip: 'KGOC.atrones.me', // Put your minecraft server IP or hostname here (e.g. '192.168.0.1')
+ ip: 'KGOC.aterons.me', // Put your minecraft server IP or hostname here (e.g. '192.168.0.1')
  port: 64707 // Put your minecraft server port here (25565 is the default)
 };
 const commands = {
