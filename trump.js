@@ -6,15 +6,9 @@ const bot = new dbd.Bot({
 
 token: "NzkyNzIxMDEwNzA0MjUyOTc4.X-h0-A.BJ0bEctIhdlKdPGxVtG-dsdXqVo",
 
-prefix: "$getServerVar[prefix]"
+prefix: "-"
 
 })
-
-bot.onMessag
-
-
-
-
 
 
 
