@@ -62,3 +62,16 @@ $color[$random[111111;999999]]
 $image[https://api.no-api-key.com/api/v2/trump?message=$replaceText[$message; ;+;-1]]`
 
 });
+
+bot.command({
+name: "apt",
+code:  `
+  $title[KGOC•ANNOUNCEMENT]
+$description[$message]
+$image[https://cdn.discordapp.com/attachments/730005688952160286/767094036942815292/T90FP-pbar.gif]
+$footer[KGOC • Announced: $username]
+$addTimestamp
+$thumbnail[$serverIcon]
+$deletecommand
+$onlyPerms[admin;only Admin Command if u use again u will kicked from server]`
+})
