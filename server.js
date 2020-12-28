@@ -75,3 +75,65 @@ $thumbnail[$serverIcon]
 $deletecommand
 $onlyPerms[admin;only Admin Command if u use again u will kicked from server]`
 })
+
+bot.command({
+ name: "play",
+ code:   `
+$playSong[$message;Error cannot be played at this moment!]
+$onlyIf[$message!=;Type a valid song name!]
+$onlyIf[$voiceID!=;You're not in a voice channel]`
+})
+
+bot.command({
+
+ name: "skip",
+
+ code:   `
+
+$skipSong
+
+$onlyIf[$voiceID!=;You're not in a voice channel]
+
+Skiped Playing: $songInfo[title]**`
+
+})
+
+bot.command({
+
+ name: "queue",
+
+ code:   `
+
+$description[$queue[1;10]]
+
+$color[$random[1;9999]]`
+
+});
+
+bot.command({
+
+ name: "volume",
+
+ code:   `
+
+$volume[$message[1]]
+
+$description[Set volume to $message[1]%]
+
+$color[$random[1;9999]]`
+
+});
+
+text to image (better font)
+
+``module.exports = ({
+
+name: "tti", 
+
+code: 
+
+$image[https://flamingtext.com/net-fu/proxy_form.cgi?script=water-logo&text=$message[1]+$message[2]+$message[3]+$message[4]+$message[5]+$message[6]+$message[7]+$message[8]+&_loc=generate&imageoutput=true]
+
+$color[RANDOM]
+
+`})
