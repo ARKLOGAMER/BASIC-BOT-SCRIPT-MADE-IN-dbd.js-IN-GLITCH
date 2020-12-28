@@ -47,15 +47,14 @@ $onlyPerms[admin;$customEmoji[Rufy] **You dont have** \`ADMIN\` **perms**]`
 bot.variables({
     prefix: "-"
 })
+module.exports = ({
 
-bot.command({
+name: "tti", 
 
- name: "play",
+code: 
 
- code: 
-$onlyIf[$message!=;Type a valid song name!]
-$onlyIf[$voiceID!=;You're not in a voice channel]
+$image[https://flamingtext.com/net-fu/proxy_form.cgi?script=water-logo&text=$message[1]+$message[2]+$message[3]+$message[4]+$message[5]+$message[6]+$message[7]+$message[8]+&_loc=generate&imageoutput=true]
 
-})
+$color[RANDOM]
 
-({
+`})
