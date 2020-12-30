@@ -6,6 +6,18 @@ const bot = new dbd.Bot({
   prefix: "$getServerVar[prefix]"
 });
 
+bot.command({
+
+name: "<@792721010704252978",
+
+code: `$title[Bot Name]
+
+$description[**Hi $username my prefix is** \`$getServerVar[prefix]\`
+
+**You can type** \`$getServerVar[prefix]help\` **for more info**]
+
+$color[RANDOM]`,
+});
 bot.onMessage();
 
 bot.command({
