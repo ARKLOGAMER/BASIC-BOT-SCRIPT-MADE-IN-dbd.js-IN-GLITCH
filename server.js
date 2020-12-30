@@ -7,16 +7,24 @@ const bot = new dbd.Bot({
 });
 
 bot.command({
+  name: "<@792721010704252978",
+  code: `$title[Bot Name]
+$description[**Hi $username my prefix is** \`$getServerVar[prefix]\`
+**You can type** \`$getServerVar[prefix]help\` **for more info**]
+$color[RANDOM]`,
+  nonPrefixed: true
+});
 
-name: "<@792721010704252978",
+bot.command({
+  name: "<@792721010704252978",
 
-code: `$title[Bot Name]
+  code: `$title[Bot Name]
 
 $description[**Hi $username my prefix is** \`$getServerVar[prefix]\`
 
 **You can type** \`$getServerVar[prefix]help\` **for more info**]
 
-$color[RANDOM]`,
+$color[RANDOM]`
 });
 bot.onMessage();
 
@@ -107,17 +115,16 @@ $color[$random[1;9999]]`
 });
 
 bot.command({
- name: "talle",
- code:   `
+  name: "talle",
+  code: `
 $title[TALLE BY $username]
 $image[https://api.no-api-key.com/api/v2/kick?&kicked=$userAvatar[$mentioned[1]]&kicker=$userAvatar[$authorID]]`
 });
 
 bot.command({
+  name: "meme",
 
- name: "meme",
-
- code:   `
+  code: `
 
 $title[MEME!]
 
