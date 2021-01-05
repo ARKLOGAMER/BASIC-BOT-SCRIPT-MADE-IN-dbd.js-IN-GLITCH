@@ -182,13 +182,9 @@ bot.joinCommand({
 
  code:   `
 
-$replaceText[$replaceText[$replaceText[$getServerVar[joinmessage];(user.mention);<@$authorID>];(guild.name);$serverName];(user.username);$username[$authorID]]
+$replaceText[$replaceText[$replaceText[$getServerVar[joinmessage];(user.mention);<@$authorID>];(guild.nam
+$color[GOLD]
 
-$onlyIf[$getServerVar[joinmessage]!=;]
-$onlyIf[$getServerVar[joinchannel]!=;]
+$addTimestamp`
 
-
-$onlyIf[$getServerVar[joinchannel]==$channelID;]`
-
-
- })
+})
