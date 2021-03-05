@@ -58,11 +58,11 @@ $image[https://api.no-api-key.com/api/v2/trump?message=$replaceText[$message; ;+
 
 bot.command({
   name: "apt",
-  code: `
+  code:  `
   $title[APEX•ANNOUNCEMENT]
 $description[$message]
 $image[https://cdn.discordapp.com/attachments/783319872230129674/784371198188453909/Tw.gif]
-$footer[• Announced: $username]
+$footer[APEX• Announced: $username]
 $addTimestamp
 $thumbnail[$serverIcon]
 $deletecommand
