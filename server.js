@@ -62,7 +62,7 @@ bot.command({
   $title[•ANNOUNCEMENT]
 $description[$message]
 $image[https://cdn.discordapp.com/attachments/783319872230129674/784371198188453909/Tw.gif]
-$footer[APEX• Announced: $username]
+$footer[•Announced: $username]
 $addTimestamp
 $thumbnail[$serverIcon]
 $deletecommand
@@ -134,3 +134,8 @@ $onlyIf[$message[1]!=;❌Please select a channel to be your welcome channel]
 $onlyIf[$hasPerms[$authorID;managemessages]==true;❌You don't have enough permissions to set the join channel required perm\` managemessages\`]`
 })
 
+bot.joinCommand({
+        channel: "817640337399873536",
+        code: `Hello And Welcome $username, To $serverName`
+})
+bot.onJoined(
