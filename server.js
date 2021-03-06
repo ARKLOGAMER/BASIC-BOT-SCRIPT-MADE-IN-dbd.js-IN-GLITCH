@@ -1,9 +1,9 @@
 const dbd = require("dbd.js");
 
 const bot = new dbd.Bot({
-  token: "ODE3MzE3MTc4Mzk5MTI5NjIx.YEHv8A._xJqOF_WvFxEENd0VpQ-XRzLoG0",
+  token: "ODE3Njc3NDU0OTkzNzg0ODMy.YEM_eA.SAB28KVzJMArbnTScb-UupefBKw",
 
-  prefix: "/"
+  prefix: "a/"
 });
 
 bot.command({
@@ -57,9 +57,9 @@ $image[https://api.no-api-key.com/api/v2/trump?message=$replaceText[$message; ;+
 });
 
 bot.command({
-  name: "apt",
+  name: "ann",
   code:  `
-  $title[APEX•ANNOUNCEMENT]
+  $title[•ANNOUNCEMENT]
 $description[$message]
 $image[https://cdn.discordapp.com/attachments/783319872230129674/784371198188453909/Tw.gif]
 $footer[APEX• Announced: $username]
