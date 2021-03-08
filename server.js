@@ -139,3 +139,25 @@ bot.joinCommand({
         code: `Hello And Welcome $username, To $serverName`
 })
 bot.onJoined()
+
+bot.command({
+ name: "modmail",
+ code: `$color[RANDOM]
+ $useChannel[818342046703157250]
+$description[<@$authorID> $message]
+$title[$username\`($authorID)\` sent modmail - to respond type <reply @user message>]
+$addCmdReactions[:incoming_envelope:]
+$cooldown[5m;:no_entry: Modmail is on cooldown. Please try again in 5 minutes]`
+})
+
+bot.command({
+ name: "reply",
+ code: `$title[Modmail Reply]
+$dm[$mentioned[1]]
+$color[RANDOM]
+$description[You've received a new reply to your modmail.
+$message]
+$addCmdReactions[:package:]
+$onlyPerms[admin;Only Users with \`ADMIN\` perms can use this]
+$suppressErrors[Make sure to mention an user]`
+})
