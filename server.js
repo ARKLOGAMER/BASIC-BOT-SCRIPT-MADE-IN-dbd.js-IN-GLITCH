@@ -147,7 +147,7 @@ bot.command({
 $description[<@$authorID> $message]
 $title[$username\`($authorID)\` sent modmail - to respond type <reply @user message>]
 $addCmdReactions[:incoming_envelope:]
-$cooldown[5m;:no_entry: Modmail is on cooldown. Please try again in 5 minutes]`
+$cooldown[1m;:no_entry: Modmail is on cooldown. Please try again in 1 minutes]`
 })
 
 bot.command({
