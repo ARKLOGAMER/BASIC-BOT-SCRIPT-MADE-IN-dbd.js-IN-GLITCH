@@ -59,10 +59,10 @@ $image[https://api.no-api-key.com/api/v2/trump?message=$replaceText[$message; ;+
 bot.command({
   name: "ann",
   code:  `
-  $title[AZIYO•ANNOUNCEMENT]
+  $title[KCRP•ANNOUNCEMENT]
 $description[$message]
 $image[https://cdn.discordapp.com/attachments/783319872230129674/784371198188453909/Tw.gif]
-$footer[AZIYO•Announced: $username]
+$footer[KCRP•Announced: $username]
 $addTimestamp
 $thumbnail[$serverIcon]
 $deletecommand
@@ -132,5 +132,45 @@ $addTimestamp
 $onlyIf[$message[1]<=100;❌You cant delete more than 100 message at a time]
 $onlyIf[$message[1]!=;❌Please select a channel to be your welcome channel]
 $onlyIf[$hasPerms[$authorID;managemessages]==true;❌You don't have enough permissions to set the join channel required perm\` managemessages\`]`
+})
+
+bot.command({
+ name: "serverinfo",
+ aliases: ["serverprofile", "server"],
+ code: `$title[$serverName[$guildID]'s Info]
+$thumbnail[$serverIcon[$guildID]]
+$description[**Name**
+$serverName[$guildID]
+
+**ID**
+$guildID
+
+**Owner**
+<@$ownerID>
+
+**Region**
+$serverRegion
+
+**Boosts**
+$serverBoostCount
+
+**Boost Level**
+$serverBoostCount
+
+**Boost Level**
+$serverBoostLevel
+
+**Verification Level**
+$serverVerificationLevel
+
+**Total Members**
+$membersCount
+
+**Creation Date**
+$creationDate[$guildID]
+
+**Emojis**
+$serverEmojis]
+$color[73C2FB]`
 })
 
