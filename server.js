@@ -1,9 +1,9 @@
 const dbd = require("dbd.js");
 
 const bot = new dbd.Bot({
-  token: "ODE5ODA5MDkyMDE2NTM3NjEx.YEsAtg.VOkPnfefwdo6s4bqqsbTjqCd2iY",
+  token: "change_me",
 
-  prefix: "k!"
+  prefix: "change_me"
 });
 
 bot.command({
@@ -16,7 +16,7 @@ $color[RANDOM]`,
 });
 
 bot.variables({
-	prefix: 'k!',
+	prefix: 'change_me',
 	wchan: '',
 	lchan: '',
 	ticketchannel: ''
@@ -66,10 +66,10 @@ $image[https://api.no-api-key.com/api/v2/trump?message=$replaceText[$message; ;+
 bot.command({
   name: "ann",
   code:  `
-  $title[KCRP•ANNOUNCEMENT]
+  $title[•ANNOUNCEMENT]
 $description[$message]
 $image[https://cdn.discordapp.com/attachments/783319872230129674/784371198188453909/Tw.gif]
-$footer[KCRP•Announced: $username]
+$footer[•Announced: $username]
 $addTimestamp
 $thumbnail[$serverIcon]
 $deletecommand
