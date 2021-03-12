@@ -15,6 +15,13 @@ $color[RANDOM]`,
   nonPrefixed: true
 });
 
+bot.variables({
+	prefix: 'k!',
+	wchan: '',
+	lchan: '',
+	ticketchannel: ''
+});
+
 bot.command({
   name: "<@792721010704252978",
 
@@ -215,4 +222,3 @@ $closeTicket[This is not a ticket]
 $onlyIf[$checkContains[$channelName;ticket]==true;{description:This command can only be used in ticket channel!} {color:RED} {delete:10s}]
 $suppressErrors`
 });
-
